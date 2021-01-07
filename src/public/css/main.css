@@ -5,9 +5,14 @@ body{
     /* color: white; */
 }
 footer{
-    width: 100%;
+    /* width: 100%;
     position: fixed;
-    bottom: 0;              /* NUEVO */
+    bottom: 0;              NUEVO */
+    position:fixed;
+    bottom:0;
+    clear:both;
+    width:100%;
+    /* height:50px; */
 }
 
 .texto{
@@ -15,4 +20,16 @@ footer{
 }
 .logo{
     width: 150px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(25, 115, 194); 
+    background-image: -webkit-linear-gradient(90deg,rgba(255, 255, 255, .2) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, .2) 50%,rgba(255, 255, 255, .2) 75%,transparent 75%,transparent)
 }
