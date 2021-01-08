@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 // LOCAL
-// mongoose.connect('mongodb://localhost:27017/notes-db-app', {
+mongoose.connect('mongodb://localhost:27017/notes-db-app', {
 // PRODUCCION
-mongoose.connect('mongodb+srv://richard:richarddev@cluster0.fkvje.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+// mongoose.connect('mongodb+srv://richard:password@cluster0.fkvje.mongodb.net/<dbname>?retryWrites=true&w=majority', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false
